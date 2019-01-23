@@ -60,6 +60,8 @@ $ sudo rm /var/db/dhcpd_leases # before you remove it, try 'cat /var/db/dhcpd_le
 $ minikube stop
 $ minikube delete
 $ minikube start --vm-driver=hyperkit -v=9
+$ export NO_PROXY=$no_proxy,$(minikube ip)
+$ minikube start --vm-driver=hyperkit -v=9
 ```
 
 ### 2. When terminal prints `Starting cluster components...`
