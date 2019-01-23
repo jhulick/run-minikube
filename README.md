@@ -83,11 +83,13 @@ The `/mnt/vda1` has enough space to save `k8s.zip`, run the following commands:
 
 NOTE: In my container the IP address is 172.17.1.192. Now look at the routing table:
 
+```
 root@e77f6a1b3740:/# route
 Kernel IP routing table
 Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 default         172.17.42.1     0.0.0.0         UG    0      0        0 eth0
 172.17.0.0      *               255.255.0.0     U     0      0        0 eth0
+```
 
 So the IP Address of the docker host 172.17.42.1 is set as the default route and is accessible from your container.
 
