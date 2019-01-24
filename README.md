@@ -63,6 +63,7 @@ $ minikube start --vm-driver=hyperkit -v=9
 $ export NO_PROXY=$no_proxy,$(minikube ip)
 $ minikube start --vm-driver=hyperkit -v=9
 ```
+If you see the waiting for ssh... the installing cfssl (with brew) and removing ~/.minikube, starting over.
 
 ### 2. When terminal prints `Starting cluster components...`
 We will start a simple HTTP server in `Host` by:
