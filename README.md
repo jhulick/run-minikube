@@ -1,6 +1,6 @@
 # Run minikube
 
-## Run minikube in macOS(10.13.6)
+## Run minikube in macOS Mojave (10.14.2)
 
 ### install minikube
 
